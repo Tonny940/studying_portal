@@ -1,5 +1,6 @@
 {% extends 'core/base.html' %}
 {% load static %}
+{% load crispy_forms_tags %}
 {% block content %}
 
     <div class="container">
@@ -31,7 +32,7 @@
             {{ form.as_p }}
             {% csrf_token %}
             <div class="form-group">
-                <button href="" class="btn btn-outline-info" type="submit">
+                <button href="#" class="btn btn-outline-info" type="submit">
                     Create
                 </button>
             </div>

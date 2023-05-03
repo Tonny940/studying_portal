@@ -22,7 +22,7 @@ def notes(request):
 
     # TODO: Here you have to fix when you have users
     # To show you notes only for current user
-    user_notes = Notes.objects.all()
+    user_notes = Notes.objects.filter(user=request.user)
 
     context = {
         "notes": user_notes,
